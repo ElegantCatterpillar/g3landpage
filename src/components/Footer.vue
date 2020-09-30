@@ -14,7 +14,7 @@
         y="0"
       >
         <polygon
-          class="text-gray-300 fill-current"
+          class="text-red-600 fill-current"
           points="2560 0 2560 100 0 100"
         ></polygon>
       </svg>
@@ -22,61 +22,43 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap">
         <div class="w-full lg:w-6/12 px-4">
-          <h4 class="text-3xl font-semibold text-white">¡Mantengámonos en contacto!</h4>
-          <h5 class="text-lg mt-0 mb-2 text-white">
-            Encuéntrenos en cualquiera de estas plataformas, respondemos de 1 a 2 días hábiles.
+          <h4 class="text-3xl font-semibold text-white">
+            ¡Mantengámonos en contacto!
+          </h4>
+          <h5 class="text-lg mt-0 mb-2 text-white font-semibold">
+            Encuéntrenos en cualquiera de nuestras Redes Sociales!
           </h5>
           <div class="mt-6">
             <button
-              class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
               type="button"
             >
-              <i class="flex text fab fa-twitter"></i></button
-            ><button
-              class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+              <i class="fab fa-twitter"></i></button
+            >
+            <button
+              class="bg-blue-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1 ml-2"
               type="button"
             >
-              <i class="flex fab fa-facebook-square"></i></button
+              <i class="fab fa-linkedin-in"></i></button
             >
+            <button
+              class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1 ml-2"
+              type="button"
+            >
+              <i class="fab fa-facebook"></i></button
+            >
+            <button
+              class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1 ml-2"
+              type="button"
+            >
+              <i class="fab fa-instagram"></i>
+            </button>
           </div>
         </div>
-        <div class="w-full lg:w-6/12 px-4">
+        <div class="w-full lg:w-2/12 px-4">
           <div class="flex flex-wrap items-top mb-6">
-            <div class="w-full lg:w-4/12 px-4 ml-auto">
-              <span
-                class="block uppercase text-white text-sm font-semibold mb-2"
-                >Otros Enlaces</span
-              >
-              <ul class="list-unstyled">
-                <li>
-                  <a
-                    class="text-white hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="#1"
-                    >Uno</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="text-white hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="#2"
-                    >Dos</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="text-white hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="#3"
-                    >Tres</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="text-white hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="#4"
-                    >Israel</a
-                  >
-                </li>
-              </ul>
+            <div class="w-full lg:w-12/12 px-4 ml-auto">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3485.3666476062203!2d-110.96318174918886!3d29.124374168313082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce868ddd98f15b%3A0xee966116524ee408!2sG3%20Ingenier%C3%ADa!5e0!3m2!1ses-419!2smx!4v1601421193598!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
           </div>
         </div>
@@ -87,7 +69,8 @@
       >
         <div class="w-full md:w-5/12 px-4 mx-auto text-center">
           <div class="text-sm text-white font-semibold py-1">
-            Copyright © {{date}} by G3 Ingeniería. Todos los Derechos Reservados.
+            Copyright © {{ date }} by G3 Ingeniería. Todos los Derechos
+            Reservados.
           </div>
         </div>
       </div>
@@ -98,8 +81,8 @@
 export default {
   data() {
     return {
-      date: new Date().getFullYear()
-    }
-  }
-}
+      date: new Date().getFullYear(),
+    };
+  },
+};
 </script>

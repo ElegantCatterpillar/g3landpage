@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Landing from './views/Landing.vue'
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import 'typeface-roboto/index.css';
 
 Vue.config.productionTip = false
 

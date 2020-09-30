@@ -20,12 +20,10 @@
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
                 <h1 class="text-white font-semibold text-5xl">
-                  Your story starts with us.
+                  Tu proyecto inicia aquí.
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                  This is a simple example of a Landing Page you can build using
-                  Tailwind Starter Kit. It features multiple CSS components
-                  based on the Tailwindcss design system.
+                  Soluciones Automatizadas a tu medida.
                 </p>
               </div>
             </div>
@@ -114,24 +112,28 @@
               <div
                 class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
               >
-                <i class="fas fa-user-friends text-xl"></i>
+                <i class="fas fa-users text-xl"></i>
               </div>
               <h3 class="text-3xl mb-2 font-semibold leading-normal">
-                Working with us is a pleasure
+                Nosotros
               </h3>
               <p
                 class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
               >
-                Don't let your uses guess by attaching tooltips and popoves to
-                any element. Just make sure you enable them first via
-                JavaScript.
+                Somos un grupoo de ingenieros cuya
+                <strong class="font-bold"
+                  >experiencia en el área de desarrollo de proyectos y servicios
+                  de automatización, control e instrumentación
+                </strong>
+                suman más de 8 años en el mercado mexicano, especificamente en
+                sectores como el Minero, Manufacturero, Alimenticio y
+                Agroindustrial.
               </p>
               <p
                 class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
               >
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
+                Nuestra empresa nace comercialmente en el año 2017, ubicándose
+                en Hermosillo, Sonora.
               </p>
               <a
                 href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
@@ -499,20 +501,38 @@
               <div
                 class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
               >
-                <div class="flex-auto p-5 lg:p-10">
-                  <h4 class="text-2xl font-semibold">Want to work with us?</h4>
+              <div class="flex-auto p-5 lg:p-10">
+                <form class="contact-form" @submit.prevent="sendEmail">
+                  <h4 class="text-2xl text-center font-semibold">
+                    ¿Quieres trabajar con nosotros?
+                  </h4>
                   <p class="leading-relaxed mt-1 mb-4 text-gray-600">
-                    Complete this form and we will get back to you in 24 hours.
+                    Complete este formulario y nos comunicaremos con usted en 24
+                    horas.
                   </p>
                   <div class="relative w-full mb-3 mt-8">
                     <label
                       class="block uppercase text-gray-700 text-xs font-bold mb-2"
                       for="full-name"
-                      >Full Name</label
+                      >Nombre Completo</label
                     ><input
                       type="text"
                       class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Full Name"
+                      placeholder="Nombre Completo"
+                      name="user_name"
+                      style="transition: all 0.15s ease 0s;"
+                    />
+                  </div>
+                  <div class="relative w-full mb-3">
+                    <label
+                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                      for="contact-number"
+                      >Número de Contacto:</label
+                    ><input
+                      type="text"
+                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      placeholder="Número de Contacto"
+                      name="user_number"
                       style="transition: all 0.15s ease 0s;"
                     />
                   </div>
@@ -520,11 +540,12 @@
                     <label
                       class="block uppercase text-gray-700 text-xs font-bold mb-2"
                       for="email"
-                      >Email</label
+                      >Correo Electronico</label
                     ><input
                       type="email"
                       class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Email"
+                      placeholder="Correo Electronico"
+                      name="user_email"
                       style="transition: all 0.15s ease 0s;"
                     />
                   </div>
@@ -532,23 +553,26 @@
                     <label
                       class="block uppercase text-gray-700 text-xs font-bold mb-2"
                       for="message"
-                      >Message</label
+                      >Mensaje</label
                     ><textarea
                       rows="4"
                       cols="80"
+                      name="message"
                       class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Type a message..."
+                      placeholder="Escribe un mensaje..."
                     ></textarea>
                   </div>
                   <div class="text-center mt-6">
                     <button
                       class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
+                      type="submit" 
+                      value="Send"
                       style="transition: all 0.15s ease 0s;"
                     >
-                      Send Message
+                      Enviar Mensaje
                     </button>
                   </div>
+                </form>
                 </div>
               </div>
             </div>
@@ -560,13 +584,32 @@
   </div>
 </template>
 <script>
+import emailjs from "emailjs-com";
 import NavbarComponent from "../components/Navbar.vue";
 import FooterComponent from "../components/Footer.vue";
 export default {
   name: "landing-page",
   components: {
     NavbarComponent,
-    FooterComponent
-  }
-}
+    FooterComponent,
+  },
+  methods: {
+    sendEmail: (e) => {
+      emailjs
+        .sendForm(
+          "service_ir84wnk",
+          "template_p919xwc",
+          e.target
+        )
+        .then(
+          (result) => {
+            alert("Mensaje Enviado! - " + result.status + " - " + result.text)
+          },
+          (error) => {
+            alert("Error al Enviar Mensaje! - " + error)
+          }
+        );
+    },
+  },
+};
 </script>
