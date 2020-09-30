@@ -8,26 +8,8 @@
       >
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
-          style='background-image: url("https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80");'
+          style='background-image: url("https://raw.githubusercontent.com/OscarOGarcia/g3landpage/master/src/assets/img/portada1.png?token=AKUVJRC6ST2SDGHNY6SXPG27OTLIE");'
         >
-          <span
-            id="blackOverlay"
-            class="w-full h-full absolute opacity-75 bg-black"
-          ></span>
-        </div>
-        <div class="container relative mx-auto">
-          <div class="items-center flex flex-wrap">
-            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-              <div class="pr-12">
-                <h1 class="text-white font-semibold text-5xl">
-                  Tu proyecto inicia aquí.
-                </h1>
-                <p class="mt-4 text-lg text-gray-300">
-                  Soluciones Automatizadas a tu medida.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
         <div
           class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
