@@ -1,37 +1,33 @@
 <template>
   <div>
+    <div
+      style="position: fixed; 
+      top: -50%; 
+      left: -50%; 
+      width: 200%; 
+      height: 200%;"
+    >
+      <img
+        style="position: fixed; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0; 
+        min-width: 50%;
+        min-height: 50%;"
+        src="../assets/img/backgrundImage3.png"
+      />
+    </div>
     <navbar-component></navbar-component>
     <main>
       <div
-        class="relative pt-16 pb-32 flex content-center items-center justify-center"
-        style="min-height: 75vh;"
+        class="relative pt-16 pb-16 flex content-center items-center justify-center"
+        style="min-height: 60vh;"
       >
-        <div
-          class="absolute top-0 w-full h-full bg-center bg-cover"
-          style='background-image: url("https://raw.githubusercontent.com/OscarOGarcia/g3landpage/master/src/assets/img/portada1.png?token=AKUVJRC6ST2SDGHNY6SXPG27OTLIE");'
-        >
-        </div>
-        <div
-          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-          style="height: 70px; transform: translateZ(0px);"
-        >
-          <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              class="text-gray-300 fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
-          </svg>
-        </div>
+        <img src="../assets/img/fondo1.jpg" style="height: 824px; width: 100%;">
       </div>
-      <section class="pb-20 bg-gray-300 -mt-24">
+
+      <section class="pb-20 relative block bg-gray-300 -mt-24">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap">
             <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
@@ -44,11 +40,17 @@
                   >
                     <i class="fas fa-award"></i>
                   </div>
-                  <h6 class="text-xl font-semibold">Awarded Agency</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    Divide details about your product or agency work into parts.
-                    A paragraph describing a feature will be enough.
-                  </p>
+                  <h6 class="text-xl font-semibold">Nuestros Valores</h6>
+                  <div class="flex flex-wrap justify-center text-left">
+                    <ul class="ml-8 mt-2 mb-4 text-gray-600 list-disc">
+                      <li>Pasión por lo que hacemos</li>
+                      <li>Confianza y Respeto</li>
+                      <li>Trabajo en Equipo</li>
+                      <li>Lealtad</li>
+                      <li>Integridad</li>
+                      <li>Actitud de Servicio</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -62,10 +64,14 @@
                   >
                     <i class="fas fa-retweet"></i>
                   </div>
-                  <h6 class="text-xl font-semibold">Free Revisions</h6>
+                  <h6 class="text-xl font-semibold">Nosotros</h6>
                   <p class="mt-2 mb-4 text-gray-600">
-                    Keep you user engaged by providing meaningful information.
-                    Remember that by this time, the user is curious.
+                    Somos un grupo de ingenieros cuya
+                    <strong class="font-semibold"
+                      >experiencia en el área de desarrollo de proyectos y
+                      servicios de automatización, control e instrumentación
+                    </strong>
+                    suman más de 8 años en el mercado
                   </p>
                 </div>
               </div>
@@ -80,15 +86,19 @@
                   >
                     <i class="fas fa-fingerprint"></i>
                   </div>
-                  <h6 class="text-xl font-semibold">Verified Company</h6>
+                  <h6 class="text-xl font-semibold">Nuestro Enfoque</h6>
                   <p class="mt-2 mb-4 text-gray-600">
-                    Write a few lines about each one. A paragraph describing a
-                    feature will be enough. Keep you user engaged!
+                    Tenemos un alto compromisoocon la innovación de Procesos
+                    industriales, sistemas para aumentar la seguridad, sistemas
+                    para aumentar la disponibilidad de equipos y altamente
+                    comprometidos con el medio ambiente
                   </p>
                 </div>
               </div>
             </div>
           </div>
+          
+          <!--
           <div class="flex flex-wrap items-center mt-32">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
               <div
@@ -102,7 +112,7 @@
               <p
                 class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
               >
-                Somos un grupoo de ingenieros cuya
+                Somos un grupo de ingenieros cuya
                 <strong class="font-bold"
                   >experiencia en el área de desarrollo de proyectos y servicios
                   de automatización, control e instrumentación
@@ -157,9 +167,11 @@
               </div>
             </div>
           </div>
+          -->
         </div>
       </section>
-      <section class="relative py-20">
+
+      <section class="relative block pt-20">
         <div
           class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
           style="height: 80px; transform: translateZ(0px);"
@@ -179,221 +191,76 @@
             ></polygon>
           </svg>
         </div>
-        <div class="container mx-auto px-4">
-          <div class="items-center flex flex-wrap">
-            <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-              <img
-                alt="..."
-                class="max-w-full rounded-lg shadow-lg"
-                src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80"
-              />
-            </div>
-            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
-              <div class="md:pr-12">
-                <div
-                  class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300"
-                >
-                  <i class="fas fa-rocket text-xl"></i>
-                </div>
-                <h3 class="text-3xl font-semibold">A growing company</h3>
-                <p class="mt-4 text-lg leading-relaxed text-gray-600">
-                  The extension comes with three pre-built pages to help you get
-                  started faster. You can change the text and images and you're
-                  good to go.
-                </p>
-                <ul class="list-none mt-6">
-                  <li class="py-2">
-                    <div class="flex items-center">
-                      <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
-                          ><i class="fas fa-fingerprint"></i
-                        ></span>
-                      </div>
-                      <div>
-                        <h4 class="text-gray-600">
-                          Carefully crafted components
-                        </h4>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="py-2">
-                    <div class="flex items-center">
-                      <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
-                          ><i class="fab fa-html5"></i
-                        ></span>
-                      </div>
-                      <div>
-                        <h4 class="text-gray-600">Amazing page examples</h4>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="py-2">
-                    <div class="flex items-center">
-                      <div>
-                        <span
-                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
-                          ><i class="far fa-paper-plane"></i
-                        ></span>
-                      </div>
-                      <div>
-                        <h4 class="text-gray-600">Dynamic components</h4>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="pt-20 pb-48">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-center text-center mb-24">
-            <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl font-semibold">Here are our heroes</h2>
-              <p class="text-lg leading-relaxed m-4 text-gray-600">
-                According to the National Oceanic and Atmospheric
-                Administration, Ted, Scambos, NSIDClead scentist, puts the
-                potentially record maximum.
-              </p>
+        <div class="container mx-auto">
+          <div class="flex flex-wrap justify-center text-center">
+            <div class="w-full lg:w-12/12">
+              <h2 class="text-4xl font-semibold">
+                Servicios G3
+              </h2>
             </div>
           </div>
           <div class="flex flex-wrap">
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  alt="..."
-                  src="../assets/img/team-1-800x800.jpg"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
-                />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Ryan Tompson</h5>
-                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    Web Developer
-                  </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-twitter"></i></button
-                    ><button
-                      class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-facebook-f"></i></button
-                    ><button
-                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-dribbble"></i>
-                    </button>
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
+                  >
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Desarrollo</h6>
+                  <div class="flex flex-wrap w-10/12 justify-center self-center text-left">
+                    <ul class="ml-8 mt-2 mb-4 text-gray-600 list-disc">
+                      <li>Desarrollo de Software para Control y Monitoreo de Sistemas</li>
+                      <li>Banco Horas Hombre (HH) para programación PLC's y/o HMI's</li>
+                      <li>Desarrollo de enlaces de comunicación inalámbrica para monitoreo y control de sistemas. (Telemetría)</li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  alt="..."
-                  src="../assets/img/team-2-800x800.jpg"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
-                />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Romina Hadid</h5>
-                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    Marketing Specialist
-                  </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-google"></i></button
-                    ><button
-                      class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-facebook-f"></i>
-                    </button>
+            <div class="w-full lg:pt-12 pt-6 md:w-4/12 px-4 text-center">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
+                  >
+                    <i class="fas fa-retweet"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Instalación</h6>
+                  <div class="flex flex-wrap w-10/12 justify-center self-center text-left">
+                    <ul class="ml-8 mt-2 mb-4 text-gray-600 list-disc">
+                      <li>Suministro, instalación y comisionamiento de instrumentación de proceso y/o válvulas de control</li>
+                      <li>Ingeniería, reingeniería y armado de tableros de control y potencia</li>
+                      <li>Pólizas de mantenimiento a sistemas de control e instrumentación</li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  alt="..."
-                  src="../assets/img/team-3-800x800.jpg"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
-                />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Alexa Smith</h5>
-                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    UI/UX Designer
-                  </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-google"></i></button
-                    ><button
-                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-twitter"></i></button
-                    ><button
-                      class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </button>
+            <div class="pt-6 lg:pt-12 w-full md:w-4/12 px-4 text-center">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
+                  >
+                    <i class="fas fa-fingerprint"></i>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-              <div class="px-6">
-                <img
-                  alt="..."
-                  src="../assets/img/team-4-470x470.png"
-                  class="shadow-lg rounded-full max-w-full mx-auto"
-                  style="max-width: 120px;"
-                />
-                <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Jenna Kardi</h5>
-                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    Founder and CEO
-                  </p>
-                  <div class="mt-6">
-                    <button
-                      class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-dribbble"></i></button
-                    ><button
-                      class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-google"></i></button
-                    ><button
-                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-twitter"></i></button
-                    ><button
-                      class="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </button>
+                  <h6 class="text-xl font-semibold">Ingeniería</h6>
+                  <div class="flex flex-wrap w-10/12 justify-center self-center text-left">
+                    <ul class="ml-8 mt-2 mb-4 text-gray-600 list-disc">
+                      <li>Ingeniería y diseño de redes de control</li>
+                      <li>Integración de sistemas de control de acceso</li>
+                      <li>Sistemas de Respaldo de energía</li>
+                      <li>Sistemas de energía solar</li>
+                      <li>Suministro, instalación y comisionamiento de variadores de velocidad</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -401,7 +268,133 @@
           </div>
         </div>
       </section>
-      <section class="pb-20 relative block bg-gray-900">
+
+      <section class="relative block pt-20 pb-32">
+        <div class="container mx-auto">
+          <div class="flex flex-wrap justify-center text-center">
+            <div class="w-full lg:w-12/12">
+              <h2 class="text-4xl font-semibold">
+                Proyectos y Servicios que ayudan a mejorar
+              </h2>
+            </div>
+          </div>
+          <div class="flex flex-wrap justify-center text-center mb-12">
+            <div class="flex flex-wrap mt-12 pt-12">
+              <div class="w-full md:w-4/12 lg:w-4/12 lg:mb-0 mb-12 px-4">
+                <div class="px-6">
+                  <img
+                    alt="..."
+                    src="../assets/img/servicio2.svg"
+                    class="max-w-full mx-auto"
+                    style="max-width: 120px;"
+                  />
+                  <div class="pt-6 text-center">
+                    <h5 class="text-xl text-gray-700 font-bold">
+                      Control de Procesos
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-4/12 lg:w-4/12 lg:mb-0 mb-12 px-4">
+                <div class="px-6">
+                  <img
+                    alt="..."
+                    src="../assets/img/servicio3.svg"
+                    class="max-w-full mx-auto"
+                    style="max-width: 120px;"
+                  />
+                  <div class="pt-6 text-center">
+                    <h5 class="text-xl text-gray-700 font-bold">
+                      Seguridad y Ecología
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-4/12 lg:w-4/12 lg:mb-0 mb-12 px-4">
+                <div class="px-6">
+                  <img
+                    alt="..."
+                    src="../assets/img/servicio1.svg"
+                    class="max-w-full mx-auto"
+                    style="max-width: 120px;"
+                  />
+                  <div class="pt-6 text-center">
+                    <h5 class="text-xl text-gray-700 font-bold">
+                      Control Administrativo
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-12">
+            <hr style="border-color: #E53E3E; border-bottom-style: solid;" />
+            <hr style="border-color: #E53E3E; border-bottom-style: solid;" />
+          </div>
+          <div class="flex flex-wrap justify-center text-center mb-12">
+            <div class="w-full lg:w-6/12">
+              <h2 class="text-4xl font-semibold">Nuestros Clientes</h2>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap">
+            <div class="w-full mb-12 px-4">
+              <flickity
+                class="flickity"
+                ref="flickity"
+                :options="flickityOptions"
+              >
+                <div class="carousel-cell">
+                  <img
+                    alt="Grupo México"
+                    src="../assets/img/cliente1.png"
+                    class="max-w-full mx-auto"
+                    style="max-width: 300px;"
+                  />
+                </div>
+
+                <div class="carousel-cell">
+                  <img
+                    alt="Norson"
+                    src="../assets/img/cliente2.png"
+                    class="max-w-full mx-auto"
+                    style="max-width: 450px;"
+                  />
+                </div>
+
+                <div class="carousel-cell">
+                  <img
+                    alt="Peñoles"
+                    src="../assets/img/cliente3.png"
+                    class="max-w-full mx-auto"
+                    style="max-width: 300px;"
+                  />
+                </div>
+
+                <div class="carousel-cell">
+                  <img
+                    alt="Cobre del Mayo"
+                    src="../assets/img/cliente4.png"
+                    class="max-w-full mx-auto mt-10"
+                    style="max-width: 300px;"
+                  />
+                </div>
+
+                <div class="carousel-cell">
+                  <img
+                    alt="Fresnillo"
+                    src="../assets/img/cliente5.png"
+                    class="max-w-full mx-auto"
+                    style="max-width: 450px;"
+                  />
+                </div>
+              </flickity>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-40 relative block bg-gray-700">
         <div
           class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
           style="height: 80px; transform: translateZ(0px);"
@@ -416,145 +409,118 @@
             y="0"
           >
             <polygon
-              class="text-gray-900 fill-current"
+              class="text-gray-700 fill-current"
               points="2560 0 2560 100 0 100"
             ></polygon>
           </svg>
         </div>
-        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+        <div class="container mx-auto px-4 lg:py-4 pt-4">
           <div class="flex flex-wrap text-center justify-center">
             <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl font-semibold text-white">Build something</h2>
-              <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-                Put the potentially record low maximum sea ice extent tihs year
-                down to low ice. According to the National Oceanic and
-                Atmospheric Administration, Ted, Scambos.
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-wrap mt-12 justify-center">
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
-              >
-                <i class="fas fa-medal text-xl"></i>
-              </div>
-              <h6 class="text-xl mt-5 font-semibold text-white">
-                Excelent Services
-              </h6>
-              <p class="mt-2 mb-4 text-gray-500">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
-              >
-                <i class="fas fa-poll text-xl"></i>
-              </div>
-              <h5 class="text-xl mt-5 font-semibold text-white">
-                Grow your market
-              </h5>
-              <p class="mt-2 mb-4 text-gray-500">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-            <div class="w-full lg:w-3/12 px-4 text-center">
-              <div
-                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
-              >
-                <i class="fas fa-lightbulb text-xl"></i>
-              </div>
-              <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
-              <p class="mt-2 mb-4 text-gray-500">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+              <h2 class="text-4xl font-semibold text-white hidden">
+                ¿Quieres trabajar con nosotros?
+              </h2>
             </div>
           </div>
         </div>
       </section>
-      <section class="relative block py-24 lg:pt-0 bg-gray-900">
+
+      <section class="relative block py-24 lg:pt-3 bg-gray-700">
         <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-            <div class="w-full lg:w-6/12 px-4">
+          <div class="flex flex-wrap justify-center -mt-48">
+            <div class="w-full lg:w-8/12 px-4">
               <div
                 class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
               >
-              <div class="flex-auto p-5 lg:p-10">
-                <form class="contact-form" @submit.prevent="sendEmail">
-                  <h4 class="text-2xl text-center font-semibold">
-                    ¿Quieres trabajar con nosotros?
-                  </h4>
-                  <p class="leading-relaxed mt-1 mb-4 text-gray-600">
-                    Complete este formulario y nos comunicaremos con usted en 24
-                    horas.
-                  </p>
-                  <div class="relative w-full mb-3 mt-8">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="full-name"
-                      >Nombre Completo</label
-                    ><input
-                      type="text"
-                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Nombre Completo"
-                      name="user_name"
-                      style="transition: all 0.15s ease 0s;"
-                    />
-                  </div>
-                  <div class="relative w-full mb-3">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="contact-number"
-                      >Número de Contacto:</label
-                    ><input
-                      type="text"
-                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Número de Contacto"
-                      name="user_number"
-                      style="transition: all 0.15s ease 0s;"
-                    />
-                  </div>
-                  <div class="relative w-full mb-3">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="email"
-                      >Correo Electronico</label
-                    ><input
-                      type="email"
-                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Correo Electronico"
-                      name="user_email"
-                      style="transition: all 0.15s ease 0s;"
-                    />
-                  </div>
-                  <div class="relative w-full mb-3">
-                    <label
-                      class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      for="message"
-                      >Mensaje</label
-                    ><textarea
-                      rows="4"
-                      cols="80"
-                      name="message"
-                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Escribe un mensaje..."
-                    ></textarea>
-                  </div>
-                  <div class="text-center mt-6">
-                    <button
-                      class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                      type="submit" 
-                      value="Send"
-                      style="transition: all 0.15s ease 0s;"
+                <div class="flex-auto p-5 lg:p-10">
+                  <form class="contact-form" @submit.prevent="sendEmail">
+                    <h4 class="text-4xl text-center font-semibold">
+                      ¡Comunícate con Nosotros!
+                    </h4>
+                    <p
+                      class="text-center leading-relaxed mt-1 mb-4 text-gray-900"
                     >
-                      Enviar Mensaje
-                    </button>
-                  </div>
-                </form>
+                      ¡Complete el siguiente formulario y nos comunicaremos con
+                      usted!
+                    </p>
+                    <div class="relative w-full mb-3 mt-8">
+                      <label
+                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        for="full-name"
+                        >Nombre y Apellido</label
+                      ><input
+                        type="text"
+                        required
+                        pattern="^[a-zA-Z]+( [a-zA-Z]+)+$"
+                        oninvalid="this.setCustomValidity('Ingresa el nombre con el cuál te llamaremos - Nombre + Apellido')"
+                        oninput="this.setCustomValidity('')"
+                        class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                        placeholder="Nombre y Apellido"
+                        name="user_name"
+                        style="transition: all 0.15s ease 0s;"
+                      />
+                    </div>
+                    <div class="relative w-full mb-3">
+                      <label
+                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        for="user_number"
+                        >Número de Contacto</label
+                      ><input
+                        type="tel"
+                        pattern="[0-9]{9,14}"
+                        oninvalid="this.setCustomValidity('Ingresa Un Número Telefonico Completo (LADA OPCIONAL + 10 Dígitos)')"
+                        oninput="this.setCustomValidity('')"
+                        required
+                        class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                        placeholder="Número de Contacto"
+                        name="user_number"
+                        style="transition: all 0.15s ease 0s;"
+                      />
+                    </div>
+                    <div class="relative w-full mb-3">
+                      <label
+                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        for="email"
+                        >Correo Electronico</label
+                      ><input
+                        type="email"
+                        required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        oninvalid="this.setCustomValidity('Ingresa una Dirección de Correo Completa')"
+                        oninput="this.setCustomValidity('Ingrese una Dirección de Correo Válida (correo@ejemplo.com)')"
+                        class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                        placeholder="Correo Electronico"
+                        name="user_email"
+                        style="transition: all 0.15s ease 0s;"
+                      />
+                    </div>
+                    <div class="relative w-full mb-3">
+                      <label
+                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        for="message"
+                        >Mensaje</label
+                      ><textarea
+                        rows="4"
+                        cols="80"
+                        name="message"
+                        required
+                        oninvalid="this.setCustomValidity('Ingresa un Mensaje')"
+                        oninput="this.setCustomValidity('')"
+                        class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                        placeholder="Escribe un mensaje..."
+                      ></textarea>
+                    </div>
+                    <div class="text-center mt-6">
+                      <button
+                        class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                        type="submit"
+                        value="Send"
+                        style="transition: all 0.15s ease 0s;"
+                      >
+                        Enviar Mensaje
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -565,8 +531,10 @@
     <footer-component></footer-component>
   </div>
 </template>
+
 <script>
 import emailjs from "emailjs-com";
+import Flickity from "vue-flickity";
 import NavbarComponent from "../components/Navbar.vue";
 import FooterComponent from "../components/Footer.vue";
 export default {
@@ -574,21 +542,36 @@ export default {
   components: {
     NavbarComponent,
     FooterComponent,
+    Flickity,
+  },
+  data() {
+    return {
+      flickityOptions: {
+        autoPlay: 1500,
+        initialIndex: 2,
+        prevNextButtons: true,
+        pageDots: false,
+        wrapAround: true,
+        freeScroll: true,
+        // any options from Flickity can be used
+      },
+    };
   },
   methods: {
     sendEmail: (e) => {
       emailjs
         .sendForm(
-          "service_ir84wnk",
+          "service_9lsyuu7",
           "template_p919xwc",
-          e.target
+          e.target,
+          "user_keASSjIf2Xc4RyEVyXLfY"
         )
         .then(
           (result) => {
-            alert("Mensaje Enviado! - " + result.status + " - " + result.text)
+            alert("Mensaje Enviado! - " + result.text);
           },
           (error) => {
-            alert("Error al Enviar Mensaje! - " + error)
+            alert("Error al Enviar Mensaje! - " + error.headers);
           }
         );
     },

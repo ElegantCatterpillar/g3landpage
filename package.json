@@ -12,7 +12,8 @@
     "core-js": "3.3.2",
     "emailjs-com": "^2.6.3",
     "typeface-roboto": "0.0.75",
-    "vue": "2.6.10"
+    "vue": "2.6.10",
+    "vue-flickity": "^1.2.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "4.0.0",

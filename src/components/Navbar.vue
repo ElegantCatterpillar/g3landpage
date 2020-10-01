@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between navbar-expand-lg"
+    class="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between navbar-expand-lg"
   >
     <div
       class="w-full mx-auto flex flex-wrap items-center justify-between bg-red-600"
@@ -9,9 +9,8 @@
         class="bg-white w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
       >
         <img
-          class="p-3"
-          src="../assets/img/g3.png"
-          width="250px"
+          src="../assets/img/g3pro.png"
+          width="300px"
           alt="G3Ingenieria"
         />
         <button
