@@ -20,14 +20,13 @@
     </div>
     <navbar-component></navbar-component>
     <main>
-      <div
-        class="relative pt-16 pb-16 flex content-center items-center justify-center"
-        style="min-height: 60vh;"
-      >
-        <img src="../assets/img/fondo1.jpg" style="height: 824px; width: 100%;">
+      
+      <section class="pb-20 relative block bg-gray-300">
+        <div
+        class="relative pt-24 pb-16 flex content-center items-center justify-center"
+        >
+        <img src="../assets/img/fondo4.png">
       </div>
-
-      <section class="pb-20 relative block bg-gray-300 -mt-24">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap">
             <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
@@ -35,12 +34,13 @@
                 class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
               >
                 <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
-                  >
-                    <i class="fas fa-award"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Nuestros Valores</h6>
+                  <img
+                    alt="..."
+                    src="../assets/img/Nosotros.svg"
+                    class="max-w-full mx-auto mb-3"
+                    style="max-width: 120px;"
+                  />
+                  <h6 class="text-xl font-semibold uppercase">Nuestros Valores</h6>
                   <div class="flex flex-wrap justify-center text-left">
                     <ul class="ml-8 mt-2 mb-4 text-gray-600 list-disc">
                       <li>Pasión por lo que hacemos</li>
@@ -59,19 +59,26 @@
                 class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
               >
                 <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
-                  >
-                    <i class="fas fa-retweet"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Nosotros</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
+                  <img
+                    alt="..."
+                    src="../assets/img/Nosotros.svg"
+                    class="max-w-full mx-auto mb-3"
+                    style="max-width: 120px;"
+                  />
+                  <h6 class="text-xl font-semibold uppercase">Nosotros</h6>
+                  <p class="mt-2 mb-4 text-gray-600 text-left">
                     Somos un grupo de ingenieros cuya
                     <strong class="font-semibold"
                       >experiencia en el área de desarrollo de proyectos y
                       servicios de automatización, control e instrumentación
                     </strong>
-                    suman más de 8 años en el mercado
+                    suman más de 8 años en el mercado mexicano, especificamente en
+                    sectores como el Minero, Manufacturero, Alimenticio y
+                    Agroindustrial.
+                  </p>
+                  <p class="mt-2 mb-4 text-gray-600 text-left">
+                    Nuestra empresa nace comercialmente en el año 2017, ubicándose
+                    en Hermosillo, Sonora.
                   </p>
                 </div>
               </div>
@@ -81,14 +88,15 @@
                 class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
               >
                 <div class="px-4 py-5 flex-auto">
-                  <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
-                  >
-                    <i class="fas fa-fingerprint"></i>
-                  </div>
-                  <h6 class="text-xl font-semibold">Nuestro Enfoque</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    Tenemos un alto compromisoocon la innovación de Procesos
+                  <img
+                    alt="..."
+                    src="../assets/img/Enfoque.svg"
+                    class="max-w-full mx-auto mb-3"
+                    style="max-width: 120px;"
+                  />
+                  <h6 class="text-xl font-semibold uppercase">Nuestro Enfoque</h6>
+                  <p class="mt-2 mb-4 text-gray-600 text-left">
+                    Tenemos un alto compromiso con la innovación de Procesos
                     industriales, sistemas para aumentar la seguridad, sistemas
                     para aumentar la disponibilidad de equipos y altamente
                     comprometidos con el medio ambiente
@@ -97,7 +105,7 @@
               </div>
             </div>
           </div>
-          
+
           <!--
           <div class="flex flex-wrap items-center mt-32">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
@@ -135,7 +143,7 @@
             </div>
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
               <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600"
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-red-600"
               >
                 <img
                   alt="..."
@@ -152,7 +160,7 @@
                   >
                     <polygon
                       points="-30,95 583,95 583,65"
-                      class="text-pink-600 fill-current"
+                      class="text-red-600 fill-current"
                     ></polygon>
                   </svg>
                   <h4 class="text-xl font-bold text-white">
@@ -168,6 +176,7 @@
             </div>
           </div>
           -->
+
         </div>
       </section>
 
@@ -194,27 +203,27 @@
         <div class="container mx-auto">
           <div class="flex flex-wrap justify-center text-center">
             <div class="w-full lg:w-12/12">
-              <h2 class="text-4xl font-semibold">
-                Servicios G3
+              <h2 class="text-5xl font-semibold">
+                Servicios
               </h2>
             </div>
           </div>
           <div class="flex flex-wrap">
             <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
               <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+                class="relative flex flex-col min-w-0 break-words w-full mb-8 shadow-lg rounded-lg bg-red-600"
               >
                 <div class="px-4 py-5 flex-auto">
                   <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
+                    class="text-red-600 text-4xl p-3 text-center inline-flex items-center w-32 h-32 justify-center mb-3 shadow-lg rounded-full bg-white"
                   >
-                    <i class="fas fa-award"></i>
+                    <i class="fas fa-code"></i>
                   </div>
-                  <h6 class="text-xl font-semibold">Desarrollo</h6>
-                  <div class="flex flex-wrap w-10/12 justify-center self-center text-left">
-                    <ul class="ml-8 mt-2 mb-4 text-gray-600 list-disc">
-                      <li>Desarrollo de Software para Control y Monitoreo de Sistemas</li>
-                      <li>Banco Horas Hombre (HH) para programación PLC's y/o HMI's</li>
+                  <h6 class="text-3xl text-white font-semibold">Desarrollo</h6>
+                  <div class="flex flex-wrap w-10/12 text-xl justify-center self-center text-left">
+                    <ul class="ml-8 mt-2 mb-4 text-white list-disc">
+                      <li>Desarrollo de Software para Control y Monitoreo de Sistemas.</li>
+                      <li>Banco Horas Hombre (HH) para programación PLC's y/o HMI's.</li>
                       <li>Desarrollo de enlaces de comunicación inalámbrica para monitoreo y control de sistemas. (Telemetría)</li>
                     </ul>
                   </div>
@@ -223,20 +232,20 @@
             </div>
             <div class="w-full lg:pt-12 pt-6 md:w-4/12 px-4 text-center">
               <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+                class="relative flex flex-col min-w-0 break-words w-full mb-8 shadow-lg rounded-lg bg-red-600"
               >
                 <div class="px-4 py-5 flex-auto">
                   <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
+                    class="text-red-600 text-4xl p-3 text-center inline-flex items-center w-32 h-32 justify-center mb-3 shadow-lg rounded-full bg-white"
                   >
-                    <i class="fas fa-retweet"></i>
+                    <i class="fas fa-tools"></i>
                   </div>
-                  <h6 class="text-xl font-semibold">Instalación</h6>
-                  <div class="flex flex-wrap w-10/12 justify-center self-center text-left">
-                    <ul class="ml-8 mt-2 mb-4 text-gray-600 list-disc">
-                      <li>Suministro, instalación y comisionamiento de instrumentación de proceso y/o válvulas de control</li>
-                      <li>Ingeniería, reingeniería y armado de tableros de control y potencia</li>
-                      <li>Pólizas de mantenimiento a sistemas de control e instrumentación</li>
+                  <h6 class="text-3xl text-white  font-semibold">Instalación</h6>
+                  <div class="flex flex-wrap w-10/12 justify-center self-center text-left text-xl">
+                    <ul class="ml-8 mt-2 mb-4 text-white list-disc">
+                      <li>Suministro, instalación y comisionamiento de instrumentación de proceso y/o válvulas de control.</li>
+                      <li>Ingeniería, reingeniería y armado de tableros de control y potencia.</li>
+                      <li>Pólizas de mantenimiento a sistemas de control e instrumentación.</li>
                     </ul>
                   </div>
                 </div>
@@ -244,22 +253,22 @@
             </div>
             <div class="pt-6 lg:pt-12 w-full md:w-4/12 px-4 text-center">
               <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+                class="relative flex flex-col min-w-0 break-words w-full mb-8 shadow-lg rounded-lg bg-red-600"
               >
                 <div class="px-4 py-5 flex-auto">
                   <div
-                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
+                    class="text-red-600 text-4xl p-3 text-center inline-flex items-center w-32 h-32 justify-center mb-3 shadow-lg rounded-full bg-white"
                   >
-                    <i class="fas fa-fingerprint"></i>
+                    <i class="fas fa-brain"></i>
                   </div>
-                  <h6 class="text-xl font-semibold">Ingeniería</h6>
-                  <div class="flex flex-wrap w-10/12 justify-center self-center text-left">
-                    <ul class="ml-8 mt-2 mb-4 text-gray-600 list-disc">
-                      <li>Ingeniería y diseño de redes de control</li>
-                      <li>Integración de sistemas de control de acceso</li>
-                      <li>Sistemas de Respaldo de energía</li>
-                      <li>Sistemas de energía solar</li>
-                      <li>Suministro, instalación y comisionamiento de variadores de velocidad</li>
+                  <h6 class="text-3xl text-white font-semibold">Ingeniería</h6>
+                  <div class="flex flex-wrap w-10/12 justify-center self-center text-left text-xl">
+                    <ul class="ml-8 mt-2 mb-4 text-white list-disc">
+                      <li>Ingeniería y diseño de redes de control.</li>
+                      <li>Integración de sistemas de control de acceso.</li>
+                      <li>Sistemas de Respaldo de energía.</li>
+                      <li>Sistemas de energía solar.</li>
+                      <li>Suministro, instalación y comisionamiento de variadores de velocidad.</li>
                     </ul>
                   </div>
                 </div>
@@ -273,7 +282,7 @@
         <div class="container mx-auto">
           <div class="flex flex-wrap justify-center text-center">
             <div class="w-full lg:w-12/12">
-              <h2 class="text-4xl font-semibold">
+              <h2 class="text-5xl font-semibold">
                 Proyectos y Servicios que ayudan a mejorar
               </h2>
             </div>

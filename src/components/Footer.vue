@@ -32,34 +32,42 @@
             <div class="text-lg mt-0 mb-2 text-white font-semibold">
               <div class="flex flex-wrap justify-around items-center mt-3">
                 <div class="text-right w-2/12">
-                  <i class="fas fa-phone-alt"></i>
+                  <a href="tel:+526626888606"><i class="fas fa-phone-alt hover:text-gray-900"></i></a>
                 </div>
-                <div class="text-left w-8/12">
-                  <span class="text-lg ml-4">+52 662 688 86 06</span>
+                <div class="text-left w-8/12 hover:text-gray-900">
+                  <a href="tel:+526626888606"><span class="text-lg ml-4">+52 662 688 86 06</span></a>
                 </div>
               </div>
 
               <div class="flex flex-wrap justify-around items-center mt-2">
                 <div class="text-right w-2/12">
-                  <i class="fas fa-envelope"></i>
+                  <a href="mailto:contacto@g3ingenieria.com?Subject=Interesado%20en%20Comunicarme%20con%20ustedes">
+                    <i class="fas fa-envelope hover:text-gray-900"></i>
+                  </a>
                 </div>
-                <div class="text-left w-8/12">
-                  <span class="text-lg ml-4">contacto@g3ingenieria.com</span>
+                <div class="text-left w-8/12 hover:text-gray-900">
+                  <a href="mailto:contacto@g3ingenieria.com?Subject=Interesado%20en%20comunicarme%20con%20ustedes">
+                    <span class="text-lg ml-4">contacto@g3ingenieria.com</span>
+                  </a>
                 </div>
+                
               </div>
 
               <div class="flex flex-wrap justify-around mt-2">
                 <div class="text-right w-2/12">
-                  <i class="fas fa-map-marker-alt"></i>
+                  <a href="https://www.google.com/maps/place/G3+Ingenier%C3%ADa/@29.12437,-110.960988,16z/data=!4m5!3m4!1s0x0:0xee966116524ee408!8m2!3d29.1243695!4d-110.9609877?hl=es-419" target="_blank">
+                    <i class="fas fa-map-marker-alt hover:text-gray-900"></i>
+                  </a>
                 </div>
-                <div class="text-left w-8/12">
-                <div class="ml-4">
+                <div class="text-left w-8/12 hover:text-gray-900">
+                <a href="https://www.google.com/maps/place/G3+Ingenier%C3%ADa/@29.12437,-110.960988,16z/data=!4m5!3m4!1s0x0:0xee966116524ee408!8m2!3d29.1243695!4d-110.9609877?hl=es-419" target="_blank">
+                    <div class="ml-4">
                   <p>Israel González 325</p>
                   <p>Col. Misión del Real,</p>
                   <p>Hermosillo, Son.</p>
                   <p>C.P. 83100</p>
                 </div>
-                  
+                </a>
                 </div>
               </div>
             </div>
