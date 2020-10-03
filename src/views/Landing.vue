@@ -20,13 +20,19 @@
     </div>
     <navbar-component></navbar-component>
     <main>
-      
       <section class="pb-20 relative block bg-gray-300">
         <div
-        class="relative pt-24 pb-16 flex content-center items-center justify-center"
+          class="relative pt-24 pb-16 flex content-center items-center justify-center"
+          id="inicio"
         >
-        <img src="../assets/img/fondo4.png">
-      </div>
+          <img
+            src="../assets/img/fondo4.png"
+            style="height: 15%; width: 100%"
+          />
+        </div>
+
+        <div class="relative pb-32 -mt-64" id="nosotros"></div>
+
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap">
             <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
@@ -40,20 +46,18 @@
                     class="max-w-full mx-auto mb-3"
                     style="max-width: 120px;"
                   />
-                  <h6 class="text-xl font-semibold uppercase">Nuestros Valores</h6>
-                  <div class="flex flex-wrap justify-center text-left">
-                    <ul class="ml-8 mt-2 mb-4 text-gray-600 list-disc">
-                      <li>Pasión por lo que hacemos</li>
-                      <li>Confianza y Respeto</li>
-                      <li>Trabajo en Equipo</li>
-                      <li>Lealtad</li>
-                      <li>Integridad</li>
-                      <li>Actitud de Servicio</li>
-                    </ul>
-                  </div>
+                  <h6 class="text-xl font-semibold uppercase">
+                    Misión
+                  </h6>
+                  <p class="mt-2 mb-4 text-gray-600 text-left">
+                    Crear soluciones innovadoras garantizando calidad a través
+                    de sistemas tecnológicos, personalmente altamente capacitado
+                    y comprometido con la satisfacción del cliente.
+                  </p>
                 </div>
               </div>
             </div>
+
             <div class="w-full md:w-4/12 px-4 text-center">
               <div
                 class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
@@ -72,17 +76,14 @@
                       >experiencia en el área de desarrollo de proyectos y
                       servicios de automatización, control e instrumentación
                     </strong>
-                    suman más de 8 años en el mercado mexicano, especificamente en
-                    sectores como el Minero, Manufacturero, Alimenticio y
+                    suman más de 8 años en el mercado mexicano, específicamente
+                    en sectores como el Minero, Manufacturero, Alimenticio y
                     Agroindustrial.
-                  </p>
-                  <p class="mt-2 mb-4 text-gray-600 text-left">
-                    Nuestra empresa nace comercialmente en el año 2017, ubicándose
-                    en Hermosillo, Sonora.
                   </p>
                 </div>
               </div>
             </div>
+
             <div class="pt-6 w-full md:w-4/12 px-4 text-center">
               <div
                 class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
@@ -94,89 +95,17 @@
                     class="max-w-full mx-auto mb-3"
                     style="max-width: 120px;"
                   />
-                  <h6 class="text-xl font-semibold uppercase">Nuestro Enfoque</h6>
+                  <h6 class="text-xl font-semibold uppercase">
+                    Visión
+                  </h6>
                   <p class="mt-2 mb-4 text-gray-600 text-left">
-                    Tenemos un alto compromiso con la innovación de Procesos
-                    industriales, sistemas para aumentar la seguridad, sistemas
-                    para aumentar la disponibilidad de equipos y altamente
-                    comprometidos con el medio ambiente
+                    Ser empresa líder como proveedor de soluciones innovadoras
+                    en el área minera e industrial de Sonora.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-
-          <!--
-          <div class="flex flex-wrap items-center mt-32">
-            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-              <div
-                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
-              >
-                <i class="fas fa-users text-xl"></i>
-              </div>
-              <h3 class="text-3xl mb-2 font-semibold leading-normal">
-                Nosotros
-              </h3>
-              <p
-                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
-              >
-                Somos un grupo de ingenieros cuya
-                <strong class="font-bold"
-                  >experiencia en el área de desarrollo de proyectos y servicios
-                  de automatización, control e instrumentación
-                </strong>
-                suman más de 8 años en el mercado mexicano, especificamente en
-                sectores como el Minero, Manufacturero, Alimenticio y
-                Agroindustrial.
-              </p>
-              <p
-                class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
-              >
-                Nuestra empresa nace comercialmente en el año 2017, ubicándose
-                en Hermosillo, Sonora.
-              </p>
-              <a
-                href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-                class="font-bold text-gray-800 mt-8"
-                >Check Tailwind Starter Kit!</a
-              >
-            </div>
-            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
-              <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-red-600"
-              >
-                <img
-                  alt="..."
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
-                  class="w-full align-middle rounded-t-lg"
-                />
-                <blockquote class="relative p-8 mb-4">
-                  <svg
-                    preserveAspectRatio="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 583 95"
-                    class="absolute left-0 w-full block"
-                    style="height: 95px; top: -94px;"
-                  >
-                    <polygon
-                      points="-30,95 583,95 583,65"
-                      class="text-red-600 fill-current"
-                    ></polygon>
-                  </svg>
-                  <h4 class="text-xl font-bold text-white">
-                    Top Notch Services
-                  </h4>
-                  <p class="text-md font-light mt-2 text-white">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
-                  </p>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          -->
-
         </div>
       </section>
 
@@ -200,7 +129,103 @@
             ></polygon>
           </svg>
         </div>
-        <div class="container mx-auto">
+
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap items-center">
+            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+              <div class="flex flex-wrap justify-center mb-8">
+                <div
+                  class="text-gray-600 text-center inline-flex items-center justify-center w-16 h-16 shadow-lg rounded-full bg-gray-100"
+                >
+                  <i class="fas fa-crosshairs text-3xl"></i>
+                </div>
+                <div>
+                  <h3 class="ml-8 text-4xl font-semibold leading-normal">
+                    Nuestro Enfoque
+                  </h3>
+                </div>
+              </div>
+
+              <p
+                class="text-xl font-light leading-relaxed mt-0 mb-4 text-gray-700 font-bold text-gray-800"
+              >
+                Nuestro Enfoque es el desarrollo de soluciones para minería
+              </p>
+              <p
+                class="text-xl leading-relaxed mt-4 mb-4 text-gray-600"
+              >
+                Tenemos un alto compromiso con la innovación de Procesos
+                industriales, sistemas para aumentar la seguridad, sistemas para
+                aumentar la disponibilidad de equipos y altamente comprometidos
+                con el medio ambiente
+              </p>
+            </div>
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-red-600"
+              >
+                <img
+                  alt="..."
+                  src="../assets/img/imagen1.jpeg"
+                  class="w-full align-middle rounded-lg"
+                />
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap items-center mt-4">
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-red-600"
+              >
+                <img
+                  alt="..."
+                  src="../assets/img/imagen2.jpeg"
+                  class="w-full align-middle rounded-lg"
+                />
+              </div>
+            </div>
+            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+              <div class="flex flex-wrap justify-center mb-8">
+                <div
+                  class="text-gray-600 text-center inline-flex items-center justify-center w-16 h-16 shadow-lg rounded-full bg-gray-100"
+                >
+                  <i class="fas fa-balance-scale text-3xl"></i>
+                </div>
+                <div>
+                  <h3 class="ml-8 text-4xl font-semibold leading-normal">
+                    Nuestros Valores
+                  </h3>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap" id="servicios">
+                <div class="mr-auto ml-4">
+                  <ul class="text-xl lg:mt-2 lg:mb-4 text-gray-600 list-disc">
+                    <li>Pasión por lo que hacemos</li>
+                    <li>Confianza y Respeto</li>
+                    <li>Innovación</li>
+                    <li>Compromiso</li>
+                    <li>Superación</li>
+                  </ul>
+                </div>
+                <div class="mr-auto ml-4">
+                  <ul class="text-xl lg:mt-2 lg:mb-4 text-gray-600 list-disc">
+                    <li>Trabajo en Equipo</li>
+                    <li>Lealtad</li>
+                    <li>Integridad</li>
+                    <li>Actitud de Servicio</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mx-auto mt-4">
           <div class="flex flex-wrap justify-center text-center">
             <div class="w-full lg:w-12/12">
               <h2 class="text-5xl font-semibold">
@@ -220,11 +245,22 @@
                     <i class="fas fa-code"></i>
                   </div>
                   <h6 class="text-3xl text-white font-semibold">Desarrollo</h6>
-                  <div class="flex flex-wrap w-10/12 text-xl justify-center self-center text-left">
+                  <div
+                    class="flex flex-wrap w-10/12 text-xl justify-center self-center text-left"
+                  >
                     <ul class="ml-8 mt-2 mb-4 text-white list-disc">
-                      <li>Desarrollo de Software para Control y Monitoreo de Sistemas.</li>
-                      <li>Banco Horas Hombre (HH) para programación PLC's y/o HMI's.</li>
-                      <li>Desarrollo de enlaces de comunicación inalámbrica para monitoreo y control de sistemas. (Telemetría)</li>
+                      <li>
+                        Desarrollo de Software para Control y Monitoreo de
+                        Sistemas.
+                      </li>
+                      <li>
+                        Banco Horas Hombre (HH) para programación PLC's y/o
+                        HMI's.
+                      </li>
+                      <li>
+                        Desarrollo de enlaces de comunicación inalámbrica para
+                        monitoreo y control de sistemas. (Telemetría)
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -240,12 +276,25 @@
                   >
                     <i class="fas fa-tools"></i>
                   </div>
-                  <h6 class="text-3xl text-white  font-semibold">Instalación</h6>
-                  <div class="flex flex-wrap w-10/12 justify-center self-center text-left text-xl">
+                  <h6 class="text-3xl text-white  font-semibold">
+                    Instalación
+                  </h6>
+                  <div
+                    class="flex flex-wrap w-10/12 justify-center self-center text-left text-xl"
+                  >
                     <ul class="ml-8 mt-2 mb-4 text-white list-disc">
-                      <li>Suministro, instalación y comisionamiento de instrumentación de proceso y/o válvulas de control.</li>
-                      <li>Ingeniería, reingeniería y armado de tableros de control y potencia.</li>
-                      <li>Pólizas de mantenimiento a sistemas de control e instrumentación.</li>
+                      <li>
+                        Suministro, instalación y comisionamiento de
+                        instrumentación de proceso y/o válvulas de control.
+                      </li>
+                      <li>
+                        Ingeniería, reingeniería y armado de tableros de control
+                        y potencia.
+                      </li>
+                      <li>
+                        Pólizas de mantenimiento a sistemas de control e
+                        instrumentación.
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -262,13 +311,18 @@
                     <i class="fas fa-brain"></i>
                   </div>
                   <h6 class="text-3xl text-white font-semibold">Ingeniería</h6>
-                  <div class="flex flex-wrap w-10/12 justify-center self-center text-left text-xl">
+                  <div
+                    class="flex flex-wrap w-10/12 justify-center self-center text-left text-xl"
+                  >
                     <ul class="ml-8 mt-2 mb-4 text-white list-disc">
                       <li>Ingeniería y diseño de redes de control.</li>
                       <li>Integración de sistemas de control de acceso.</li>
                       <li>Sistemas de Respaldo de energía.</li>
                       <li>Sistemas de energía solar.</li>
-                      <li>Suministro, instalación y comisionamiento de variadores de velocidad.</li>
+                      <li>
+                        Suministro, instalación y comisionamiento de variadores
+                        de velocidad.
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -287,7 +341,10 @@
               </h2>
             </div>
           </div>
-          <div class="flex flex-wrap justify-center text-center mb-12">
+          <div
+            class="flex flex-wrap justify-center text-center mb-12"
+            id="clientes"
+          >
             <div class="flex flex-wrap mt-12 pt-12">
               <div class="w-full md:w-4/12 lg:w-4/12 lg:mb-0 mb-12 px-4">
                 <div class="px-6">
@@ -347,56 +404,54 @@
           </div>
 
           <div class="flex flex-wrap">
-            <div class="w-full mb-12 px-4">
+            <div class="w-full mb-12">
               <flickity
                 class="flickity"
                 ref="flickity"
                 :options="flickityOptions"
               >
-                <div class="carousel-cell">
                   <img
-                    alt="Grupo México"
-                    src="../assets/img/cliente1.png"
-                    class="max-w-full mx-auto"
-                    style="max-width: 300px;"
-                  />
-                </div>
-
-                <div class="carousel-cell">
-                  <img
+                    class="carousel-image"
                     alt="Norson"
-                    src="../assets/img/cliente2.png"
-                    class="max-w-full mx-auto"
-                    style="max-width: 450px;"
+                    src="../assets/img/norson1.png"
+                    style="width: 300px; height: 200px; margin-right: 10px; display: block;"
                   />
-                </div>
 
-                <div class="carousel-cell">
                   <img
                     alt="Peñoles"
-                    src="../assets/img/cliente3.png"
-                    class="max-w-full mx-auto"
-                    style="max-width: 300px;"
+                    src="../assets/img/penioles.png"
+                    class="carousel-image"
+                    style="width: 300px; height: 200px; margin-right: 10px; display: block;"
                   />
-                </div>
 
-                <div class="carousel-cell">
                   <img
-                    alt="Cobre del Mayo"
-                    src="../assets/img/cliente4.png"
-                    class="max-w-full mx-auto mt-10"
-                    style="max-width: 300px;"
+                    alt="Grupo México"
+                    src="../assets/img/cobreDelMayo1.png"
+                    class="carousel-image"
+                    style="width: 300px; height: 200px; margin-right: 10px; display: block;"
                   />
-                </div>
 
-                <div class="carousel-cell">
                   <img
-                    alt="Fresnillo"
-                    src="../assets/img/cliente5.png"
-                    class="max-w-full mx-auto"
-                    style="max-width: 450px;"
+                    alt="Norson"
+                    src="../assets/img/fresnilloPLC.png"
+                    class="carousel-image"
+                    style="width: 300px; height: 200px; margin-right: 10px; display: block;"
                   />
-                </div>
+
+                  <img
+                    alt="Peñoles"
+                    src="../assets/img/grupoMexico2.png"
+                    class="carousel-image"
+                    style="width: 300px; height: 200px; margin-right: 10px; display: block;"
+                  />
+
+                  <img
+                    alt="Metallorum"
+                    src="../assets/img/Metallorum2.png"
+                    class="carousel-image"
+                    style="width: 300px; height: 200px; margin-right: 10px; display: block;"
+                  />
+                
               </flickity>
             </div>
           </div>
@@ -556,13 +611,16 @@ export default {
   data() {
     return {
       flickityOptions: {
-        autoPlay: 1500,
-        initialIndex: 2,
-        prevNextButtons: true,
-        pageDots: false,
-        wrapAround: true,
-        freeScroll: true,
-        // any options from Flickity can be used
+        "autoPlay": 1500,
+        "pageDots": true,
+        "resize": true,
+        "prevNextButtons": true,
+        "wrapAround": true,
+        "freeScroll": true,
+        "contain": false,
+        "pauseAutoPlayOnHover": false,
+        "adaptiveHeight": true,
+        "imagesLoaded": true
       },
     };
   },
